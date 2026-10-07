@@ -1,0 +1,7 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+
+# Captured frames can be large and may contain private scenes.
+sample_data/*.png
+sample_data/*.npy
