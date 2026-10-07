@@ -1,0 +1,5 @@
+# Python-level dependencies only. Install the local arm64 freenect binding
+# separately; it is not reproduced through pip on this macOS setup.
+numpy
+opencv-python
+open3d
