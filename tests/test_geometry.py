@@ -23,7 +23,7 @@ class GeometryTests(unittest.TestCase):
         self.assertIsNone(pixel_depth_to_camera_xyz(10, 20, float("nan"), INTRINSICS))
 
     def test_depth_image_skips_invalid_values(self) -> None:
-        depth_mm = np.array([[0, 1000], [2000, 0]], dtype=np.uint16)
+        depth_mm = np.array([[0, 1000], [2000, 10001]], dtype=np.uint16)
         points = depth_image_to_camera_points(depth_mm, INTRINSICS)
         np.testing.assert_allclose(points, [[-0.09, -0.1, 1.0], [-0.2, -0.19, 2.0]])
 

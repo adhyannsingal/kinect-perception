@@ -9,6 +9,9 @@ from dataclasses import dataclass
 import numpy as np
 
 
+KINECT_V1_MAX_DEPTH_MM = 10_000
+
+
 @dataclass(frozen=True)
 class CameraIntrinsics:
     """Pinhole intrinsics for a 640x480 camera image."""
@@ -54,7 +57,9 @@ def depth_image_to_camera_points(
     if depth_mm.ndim != 2:
         raise ValueError("depth_mm must be a two-dimensional depth image")
 
-    valid = np.isfinite(depth_mm) & (depth_mm > 0)
+    # libfreenect documents 0 as no depth and 10,000 mm as the largest valid
+    # DEPTH_MM value.  Keep only physically meaningful metric measurements.
+    valid = np.isfinite(depth_mm) & (depth_mm > 0) & (depth_mm <= KINECT_V1_MAX_DEPTH_MM)
     v, u = np.nonzero(valid)
     z = depth_mm[valid].astype(np.float64) / 1000.0
     x = (u.astype(np.float64) - intrinsics.cx) * z / intrinsics.fx
