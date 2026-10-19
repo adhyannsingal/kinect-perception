@@ -67,6 +67,14 @@ def main() -> None:
     # Fit the initial camera to valid points once.  Later updates preserve the
     # user's mouse rotation and zoom rather than resetting the viewpoint.
     visualizer.reset_view_point(True)
+    view = visualizer.get_view_control()
+    # Camera XYZ stays +X right, +Y down, +Z forward.  Open3D's front
+    # points from the look-at target toward the viewer, so use -Z to look
+    # along +Z and -Y for screen-up.  Change only the view, not the points.
+    view.set_up([0.0, -1.0, 0.0])
+    view.set_front([0.0, 0.0, -1.0])
+    view.set_lookat(cloud.get_axis_aligned_bounding_box().get_center())
+    view.set_zoom(0.7)
     visualizer.get_render_option().point_size = 2.0
     cv2.namedWindow(DEPTH_WINDOW)
     next_debug_time = time.monotonic() + DEBUG_INTERVAL_SECONDS
