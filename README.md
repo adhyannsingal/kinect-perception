@@ -60,3 +60,27 @@ Run hardware-independent checks with:
 ```bash
 python -m unittest discover -s tests -v
 ```
+
+## Phase 1 terrain perception
+
+The stationary terrain application adds versioned recording/replay, calibrated
+coordinates, constrained ground estimation, an elevation/evidence grid, raised
+geometry, visible depressions/edges, unknown support, health and export.
+It runs offline without a Kinect and preserves the original demos/modules.
+Physical calibration and fixture qualification remain incomplete.
+
+```bash
+conda activate kinect
+python scripts/terrain_perception.py evaluate --output /tmp/phase1-evaluation.json
+python scripts/terrain_perception.py replay --session fixtures/phase1/session \
+  --output /tmp/phase1-replay
+python scripts/terrain_perception.py replay --session fixtures/phase1/session \
+  --output /tmp/phase1-view --display --cloud --step
+```
+
+Use a new output path for each run. See the [run guide](docs/PHASE1.md),
+[calibration handoff](docs/PHASE1_CALIBRATION.md),
+[release report](docs/PHASE1_RELEASE_REPORT.md), and
+[build specification](docs/specs/PHASE_1_KINECT_PERCEPTION_SPEC.md).
+Outputs describe observed geometry, confidence proxies and unknown space; they
+do not establish rover safety or enable motion.

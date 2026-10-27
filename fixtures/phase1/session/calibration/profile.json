@@ -1,0 +1,47 @@
+{
+  "calibration_id": "synthetic-pinhole-v1",
+  "mount_transform_id": "synthetic-fixed-v1",
+  "calibration_kind": "synthetic",
+  "measurement_method": "analytic ray casting; NOT physical calibration",
+  "stream_width": 320,
+  "stream_height": 240,
+  "intrinsics_fx_fy_cx_cy": [
+    220,
+    220,
+    159.5,
+    44
+  ],
+  "distortion_model": "none_synthetic",
+  "qualified_range_m": [
+    0.5,
+    5.0
+  ],
+  "T_test_ground_from_depth_optical": [
+    [
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      -1,
+      0,
+      0.8
+    ],
+    [
+      0,
+      0,
+      0,
+      1
+    ]
+  ],
+  "measurement_uncertainty_m": 0.005,
+  "depth_representation": "uint16_mm_optical_z"
+}

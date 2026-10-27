@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "session_id": "synthetic-development-v1",
+  "config_id": "d1816ac8f9eeee72",
+  "created_utc": "2026-10-27T22:20:33.924608+00:00",
+  "depth_format": "uint16_mm_optical_z",
+  "depth_frame_id": "depth_optical",
+  "coordinate_frame": "test_ground",
+  "rgb_registration_enabled": false,
+  "clock_policy": "frame clock domain; live capture uses labelled receive-time proxy",
+  "scene_metadata": {
+    "kind": "synthetic logic fixtures; not qualification"
+  },
+  "hardware_qualified": false,
+  "device_model": "analytic pinhole",
+  "stream_modes": {
+    "depth": "DEPTH_MM",
+    "rgb": "VIDEO_RGB optional; unregistered"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "mode": "stationary_bench_perception",
+  "calibration_id": "synthetic-pinhole-v1",
+  "mount_transform_id": "synthetic-fixed-v1",
+  "calibration_kind": "synthetic",
+  "measurement_method": "analytic ray casting; NOT physical calibration",
+  "stream_width": 320,
+  "stream_height": 240,
+  "intrinsics_fx_fy_cx_cy": [
+    220,
+    220,
+    159.5,
+    44
+  ],
+  "distortion_model": "none_synthetic",
+  "depth_representation": "uint16_mm_optical_z",
+  "qualified_range_m": [
+    0.5,
+    5.0
+  ],
+  "T_test_ground_from_depth_optical": [
+    [
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      -1,
+      0,
+      0.8
+    ],
+    [
+      0,
+      0,
+      0,
+      1
+    ]
+  ],
+  "bounds_xy_m": [
+    0.8,
+    4.0,
+    -1.2,
+    1.2
+  ],
+  "bounds_z_m": [
+    -0.5,
+    1.5
+  ],
+  "resolution_m": 0.1,
+  "seed_region_xy_m": [
+    1.0,
+    1.8,
+    -0.8,
+    0.8
+  ],
+  "measurement_uncertainty_m": 0.005,
+  "ground_distance_m": 0.02,
+  "ground_height_tolerance_m": 0.04,
+  "max_normal_deviation_rad": 0.15,
+  "max_ground_residual_m": 0.02,
+  "minimum_ground_coverage": 0.4,
+  "ground_min_inliers": 40,
+  "ground_min_inlier_ratio": 0.3,
+  "ground_iterations": 250,
+  "voxel_size_m": 0.03,
+  "ground_temporal_offset_m": 0.03,
+  "ground_temporal_angle_rad": 0.1,
+  "minimum_support_coverage": 0.5,
+  "minimum_support_span_fraction": 0.25,
+  "support_subdivisions": 2,
+  "minimum_cell_points": 2,
+  "raised_threshold_m": 0.06,
+  "depression_threshold_m": 0.06,
+  "edge_threshold_m": 0.08,
+  "negative_context_radius_m": 0.4,
+  "maximum_input_age_s": 0.5,
+  "support_evidence_ttl_s": 1.0,
+  "target_grid_hz": 10.0,
+  "seed": 0
+}

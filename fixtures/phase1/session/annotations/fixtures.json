@@ -1,0 +1,100 @@
+[
+  {
+    "sequence_id": 0,
+    "layout": "flat",
+    "targets": []
+  },
+  {
+    "sequence_id": 1,
+    "layout": "raised",
+    "targets": [
+      {
+        "type": "RAISED_GEOMETRY",
+        "bounds_xy_m": [
+          2.0,
+          2.45,
+          -0.65,
+          -0.25
+        ],
+        "height_m": 0.22
+      }
+    ]
+  },
+  {
+    "sequence_id": 2,
+    "layout": "depression",
+    "targets": [
+      {
+        "type": "VISIBLE_DEPRESSION",
+        "bounds_xy_m": [
+          2.0,
+          2.7,
+          0.2,
+          0.6
+        ],
+        "depth_m": 0.18
+      }
+    ]
+  },
+  {
+    "sequence_id": 3,
+    "layout": "dropout",
+    "targets": [
+      {
+        "type": "UNKNOWN",
+        "bounds_xy_m": [
+          2,
+          2.5,
+          -0.3,
+          0.3
+        ]
+      }
+    ]
+  },
+  {
+    "sequence_id": 4,
+    "layout": "edge",
+    "targets": [
+      {
+        "type": "MEASURED_EDGE",
+        "bounds_xy_m": [
+          1.9,
+          2.1,
+          -0.5,
+          0.5
+        ]
+      }
+    ]
+  },
+  {
+    "sequence_id": 5,
+    "layout": "mixed",
+    "targets": [
+      {
+        "type": "RAISED_GEOMETRY",
+        "bounds_xy_m": [
+          2.0,
+          2.45,
+          -0.65,
+          -0.25
+        ],
+        "height_m": 0.22
+      },
+      {
+        "type": "VISIBLE_DEPRESSION",
+        "bounds_xy_m": [
+          2.0,
+          2.7,
+          0.2,
+          0.6
+        ],
+        "depth_m": 0.18
+      }
+    ]
+  },
+  {
+    "sequence_id": 6,
+    "layout": "wall",
+    "targets": []
+  }
+]

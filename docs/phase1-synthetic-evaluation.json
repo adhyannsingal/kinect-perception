@@ -1,0 +1,248 @@
+{
+  "schema_version": 1,
+  "qualification": "SYNTHETIC_LOGIC_ONLY",
+  "hardware_qualified": false,
+  "config_id": "d1816ac8f9eeee72",
+  "effective_configuration": {
+    "schema_version": 1,
+    "mode": "stationary_bench_perception",
+    "calibration_id": "synthetic-pinhole-v1",
+    "mount_transform_id": "synthetic-fixed-v1",
+    "calibration_kind": "synthetic",
+    "measurement_method": "analytic ray casting; NOT physical calibration",
+    "stream_width": 320,
+    "stream_height": 240,
+    "intrinsics_fx_fy_cx_cy": [
+      220,
+      220,
+      159.5,
+      44
+    ],
+    "distortion_model": "none_synthetic",
+    "depth_representation": "uint16_mm_optical_z",
+    "qualified_range_m": [
+      0.5,
+      5.0
+    ],
+    "T_test_ground_from_depth_optical": [
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        -1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        -1,
+        0,
+        0.8
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "bounds_xy_m": [
+      0.8,
+      4.0,
+      -1.2,
+      1.2
+    ],
+    "bounds_z_m": [
+      -0.5,
+      1.5
+    ],
+    "resolution_m": 0.1,
+    "seed_region_xy_m": [
+      1.0,
+      1.8,
+      -0.8,
+      0.8
+    ],
+    "measurement_uncertainty_m": 0.005,
+    "ground_distance_m": 0.02,
+    "ground_height_tolerance_m": 0.04,
+    "max_normal_deviation_rad": 0.15,
+    "max_ground_residual_m": 0.02,
+    "minimum_ground_coverage": 0.4,
+    "ground_min_inliers": 40,
+    "ground_min_inlier_ratio": 0.3,
+    "ground_iterations": 250,
+    "voxel_size_m": 0.03,
+    "ground_temporal_offset_m": 0.03,
+    "ground_temporal_angle_rad": 0.1,
+    "minimum_support_coverage": 0.5,
+    "minimum_support_span_fraction": 0.25,
+    "support_subdivisions": 2,
+    "minimum_cell_points": 2,
+    "raised_threshold_m": 0.06,
+    "depression_threshold_m": 0.06,
+    "edge_threshold_m": 0.08,
+    "negative_context_radius_m": 0.4,
+    "maximum_input_age_s": 0.5,
+    "support_evidence_ttl_s": 1.0,
+    "target_grid_hz": 10.0,
+    "seed": 0
+  },
+  "scene_count": 7,
+  "frame_count": 7,
+  "layouts": [
+    {
+      "layout": "flat",
+      "passed": true,
+      "ground_status": "VALID",
+      "support_cells": 566,
+      "grid_cells": 768,
+      "ground_residual_p95_m": 0.0003155232711673205,
+      "processing_time_s": 0.12198579078540206,
+      "comparisons": []
+    },
+    {
+      "layout": "raised",
+      "passed": true,
+      "ground_status": "VALID",
+      "support_cells": 502,
+      "grid_cells": 768,
+      "ground_residual_p95_m": 0.0003155232711673205,
+      "processing_time_s": 0.08301154104992747,
+      "comparisons": [
+        {
+          "type": "RAISED_GEOMETRY",
+          "detected": true,
+          "target_cell_count": 16,
+          "false_ground_cells": null,
+          "max_observed_height_m": 0.22011363636363646,
+          "min_observed_height_m": -0.00019090909090901942,
+          "matched_observation_ids": [
+            "0:RAISED_GEOMETRY:0"
+          ]
+        }
+      ]
+    },
+    {
+      "layout": "depression",
+      "passed": true,
+      "ground_status": "VALID",
+      "support_cells": 538,
+      "grid_cells": 768,
+      "ground_residual_p95_m": 0.0003155232711673205,
+      "processing_time_s": 0.08492529205977917,
+      "comparisons": [
+        {
+          "type": "VISIBLE_DEPRESSION",
+          "detected": true,
+          "target_cell_count": 28,
+          "false_ground_cells": 0,
+          "max_observed_height_m": 0.00012727272727275363,
+          "min_observed_height_m": -0.18015454545454535,
+          "matched_observation_ids": [
+            "0:VISIBLE_DEPRESSION:0"
+          ]
+        }
+      ]
+    },
+    {
+      "layout": "dropout",
+      "passed": true,
+      "ground_status": "VALID",
+      "support_cells": 536,
+      "grid_cells": 768,
+      "ground_residual_p95_m": 0.0003155232711673205,
+      "processing_time_s": 0.08354633394628763,
+      "comparisons": [
+        {
+          "type": "UNKNOWN",
+          "detected": false,
+          "target_cell_count": 30,
+          "false_ground_cells": 0,
+          "max_observed_height_m": null,
+          "min_observed_height_m": null,
+          "matched_observation_ids": []
+        }
+      ]
+    },
+    {
+      "layout": "edge",
+      "passed": true,
+      "ground_status": "VALID",
+      "support_cells": 388,
+      "grid_cells": 768,
+      "ground_residual_p95_m": 0.00031519119891543603,
+      "processing_time_s": 0.0665694996714592,
+      "comparisons": [
+        {
+          "type": "MEASURED_EDGE",
+          "detected": true,
+          "target_cell_count": 20,
+          "false_ground_cells": null,
+          "max_observed_height_m": 0.000200000000000089,
+          "min_observed_height_m": -0.24545454545454537,
+          "matched_observation_ids": [
+            "0:MEASURED_EDGE:0",
+            "0:MEASURED_EDGE:1"
+          ]
+        }
+      ]
+    },
+    {
+      "layout": "mixed",
+      "passed": true,
+      "ground_status": "VALID",
+      "support_cells": 474,
+      "grid_cells": 768,
+      "ground_residual_p95_m": 0.0003155232711673205,
+      "processing_time_s": 0.08056004205718637,
+      "comparisons": [
+        {
+          "type": "RAISED_GEOMETRY",
+          "detected": true,
+          "target_cell_count": 16,
+          "false_ground_cells": null,
+          "max_observed_height_m": 0.22011363636363646,
+          "min_observed_height_m": -0.00019090909090901942,
+          "matched_observation_ids": [
+            "0:RAISED_GEOMETRY:0"
+          ]
+        },
+        {
+          "type": "VISIBLE_DEPRESSION",
+          "detected": true,
+          "target_cell_count": 28,
+          "false_ground_cells": 0,
+          "max_observed_height_m": 0.00012727272727275363,
+          "min_observed_height_m": -0.18015454545454535,
+          "matched_observation_ids": [
+            "0:VISIBLE_DEPRESSION:1"
+          ]
+        }
+      ]
+    },
+    {
+      "layout": "wall",
+      "passed": true,
+      "ground_status": "INSUFFICIENT_SUPPORT",
+      "support_cells": 0,
+      "grid_cells": 768,
+      "ground_residual_p95_m": null,
+      "processing_time_s": 0.01868516718968749,
+      "comparisons": []
+    }
+  ],
+  "all_passed": true,
+  "pending": [
+    "five measured target locations",
+    "five independent physical layouts",
+    "Kinect noise/range/error budget",
+    "live freeze and load measurement",
+    "real-recorded-session regression",
+    "local display review"
+  ]
+}

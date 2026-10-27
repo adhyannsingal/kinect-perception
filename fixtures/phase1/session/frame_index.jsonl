@@ -1,0 +1,7 @@
+{"sequence_id": 0, "receive_timestamp": 0.0, "path": "frames/00000000.npz", "sha256": "473ed741a8469e0f57c53406da9704b44cd9839646a1657a219afa6ccefb870d", "dropped_frames_total": 0, "missing_sequences_before": 0}
+{"sequence_id": 1, "receive_timestamp": 0.1, "path": "frames/00000001.npz", "sha256": "0a3fba23db216fa0a3f015813b20984d44fb761635908ef917d402433ca2c3ab", "dropped_frames_total": 0, "missing_sequences_before": 0}
+{"sequence_id": 2, "receive_timestamp": 0.2, "path": "frames/00000002.npz", "sha256": "a516772629195d189ce8c4233e2c85e7713c912c30978306015ba00b3555c77a", "dropped_frames_total": 0, "missing_sequences_before": 0}
+{"sequence_id": 3, "receive_timestamp": 0.3, "path": "frames/00000003.npz", "sha256": "0a97fd7a3a2a5741d60ed9fd33773f970210cae1cdd925615861e8d5fa5bdd6c", "dropped_frames_total": 0, "missing_sequences_before": 0}
+{"sequence_id": 4, "receive_timestamp": 0.4, "path": "frames/00000004.npz", "sha256": "92f5a2b1062dde22ca57616df48d3c468b08c3cb368a8a7c78331c70b67bc8b5", "dropped_frames_total": 0, "missing_sequences_before": 0}
+{"sequence_id": 5, "receive_timestamp": 0.5, "path": "frames/00000005.npz", "sha256": "b242859bec1bf2121bbe0f8bb10f764d3e304a7bc32c8bea4551b6005a62b3fb", "dropped_frames_total": 0, "missing_sequences_before": 0}
+{"sequence_id": 6, "receive_timestamp": 0.6, "path": "frames/00000006.npz", "sha256": "94ce471cf53c221bd68638420a5ced2d87c9a770457a3f95f1ef6ceec6193571", "dropped_frames_total": 0, "missing_sequences_before": 0}
