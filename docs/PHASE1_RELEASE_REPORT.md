@@ -4,6 +4,12 @@ Date: 2026-10-27. Branch: `feature/phase1-terrain`.
 Known-working starting commit: `78bd4744da584abe6481b606e67ac434a1e84d42`.
 No merge into main or physical validation is claimed.
 
+This is the original software-handoff snapshot. The Phase 1 software was later
+merged as `1b62195`. See [the hardware follow-up](PHASE1_HARDWARE_CHECKS.md) for
+successful live capture/replay checks after reconnecting the Kinect, and
+[the target workflow](BENCH_CALIBRATION_WORKFLOW.md) for the next calibration
+step. Physical fixture/accuracy qualification remains incomplete.
+
 The Kinect was unavailable for this implementation. Synthetic results verify
 software contracts and fixture logic; the project has **not** passed the Phase 1
 physical-completion checklist. The calibrated bench profile and measured real

@@ -5,6 +5,11 @@ is intentionally unresolved. `configs/phase1_synthetic.json` describes an analyt
 camera and must not be used on the Kinect. The approximate existing Kinect
 intrinsics and all original demos remain unchanged.
 
+An assisted [target collection and candidate-transform workflow](BENCH_CALIBRATION_WORKFLOW.md)
+is now available. It uses separate fitting and validation targets and writes a
+new unqualified profile. See [the actual hardware checks](PHASE1_HARDWARE_CHECKS.md)
+for capture results; those checks do not establish metric accuracy.
+
 ## Fill the bench profile
 
 Record these measurements before interpreting terrain:

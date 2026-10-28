@@ -84,3 +84,9 @@ Use a new output path for each run. See the [run guide](docs/PHASE1.md),
 [build specification](docs/specs/PHASE_1_KINECT_PERCEPTION_SPEC.md).
 Outputs describe observed geometry, confidence proxies and unknown space; they
 do not establish rover safety or enable motion.
+
+For the next physical-calibration step, use the
+[measured-target workflow](docs/BENCH_CALIBRATION_WORKFLOW.md): collect repeated
+depth samples, fit a separate candidate bench transform, and validate on held-out
+measured targets. The [hardware check log](docs/PHASE1_HARDWARE_CHECKS.md) records
+successful capture/replay checks separately from pending physical accuracy gates.
